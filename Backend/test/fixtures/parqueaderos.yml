@@ -10,6 +10,8 @@ one:
   email: MyString
   telefono1: MyString
   telefono2: MyString
+  latitud: 9.99
+  longitud: 9.99
 
 two:
   nombre: MyString
@@ -21,3 +23,5 @@ two:
   email: MyString
   telefono1: MyString
   telefono2: MyString
+  latitud: 9.99
+  longitud: 9.99

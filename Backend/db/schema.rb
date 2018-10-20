@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 20180901210718) do
     t.string "email", limit: 50, null: false
     t.string "telefono1", limit: 20, null: false
     t.string "telefono2", limit: 20
+    t.decimal "latitud", null: false
+    t.decimal "longitud", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

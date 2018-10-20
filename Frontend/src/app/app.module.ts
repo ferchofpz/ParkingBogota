@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { Geolocation } from '@ionic-native/geolocation';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
@@ -15,6 +16,7 @@ import { HttpClientModule  } from "@angular/common/http";
 import { RegistroPage } from '../pages/registro/registro';
 
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { OneSignal } from '@ionic-native/onesignal';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     SplashScreen,
     AuthServiceProvider,
     GoogleMaps,
+    Geolocation,
+    OneSignal,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -12,7 +12,7 @@ class ParqueaderosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create parqueadero" do
     assert_difference('Parqueadero.count') do
-      post parqueaderos_url, params: { parqueadero: { calificacion: @parqueadero.calificacion, caracteristicas: @parqueadero.caracteristicas, condiciones: @parqueadero.condiciones, direccion: @parqueadero.direccion, email: @parqueadero.email, nombre: @parqueadero.nombre, servicios_adicionales: @parqueadero.servicios_adicionales, telefono1: @parqueadero.telefono1, telefono2: @parqueadero.telefono2 } }, as: :json
+      post parqueaderos_url, params: { parqueadero: { calificacion: @parqueadero.calificacion, caracteristicas: @parqueadero.caracteristicas, condiciones: @parqueadero.condiciones, direccion: @parqueadero.direccion, email: @parqueadero.email, latitud: @parqueadero.latitud, longitud: @parqueadero.longitud, nombre: @parqueadero.nombre, servicios_adicionales: @parqueadero.servicios_adicionales, telefono1: @parqueadero.telefono1, telefono2: @parqueadero.telefono2, latitud: @parqueadero.latitud, longitud: @parqueadero.longitud } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ParqueaderosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update parqueadero" do
-    patch parqueadero_url(@parqueadero), params: { parqueadero: { calificacion: @parqueadero.calificacion, caracteristicas: @parqueadero.caracteristicas, condiciones: @parqueadero.condiciones, direccion: @parqueadero.direccion, email: @parqueadero.email, nombre: @parqueadero.nombre, servicios_adicionales: @parqueadero.servicios_adicionales, telefono1: @parqueadero.telefono1, telefono2: @parqueadero.telefono2 } }, as: :json
+    patch parqueadero_url(@parqueadero), params: { parqueadero: { calificacion: @parqueadero.calificacion, caracteristicas: @parqueadero.caracteristicas, condiciones: @parqueadero.condiciones, direccion: @parqueadero.direccion, email: @parqueadero.email, latitud: @parqueadero.latitud, longitud: @parqueadero.longitud, nombre: @parqueadero.nombre, servicios_adicionales: @parqueadero.servicios_adicionales, telefono1: @parqueadero.telefono1, telefono2: @parqueadero.telefono2, latitud: @parqueadero.latitud, longitud: @parqueadero.longitud } }, as: :json
     assert_response 200
   end
 
